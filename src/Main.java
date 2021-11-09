@@ -65,7 +65,7 @@ public class Main {
             String proceed = reader.readLine();
             if (proceed.equalsIgnoreCase("P")) {
                 // Finally, strategy handles the payment.
-                if (strategy.pay(order.getTotalCost())) {
+                if (...) { //TODO: pay using strategy
                     System.out.println("Payment has been successful.");
                 } else {
                     System.out.println("FAIL! Please, check your data.");

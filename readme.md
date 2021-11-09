@@ -1,6 +1,9 @@
 
-
-
+# TODO: 
+1. Implement PayStrategy for PayByCreditCard and PayByPaypal
+2. Implement pay and setSignedIn methods of PayByPaypal
+3. Implement pay method of PayByCreditCard
+4. Use strategy to make the payment in Main file
 
 # Usage
 Run: 

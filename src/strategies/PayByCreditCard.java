@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 /**
  * Concrete strategy. Implements credit card payment method.
  */
-public class PayByCreditCard implements PayStrategy {
+public class PayByCreditCard implements ... { //TODO
     private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
-    private CreditCard card;
+    ... // TODO: add missing attribute
 
     /**
      * Collect credit card data.
@@ -23,9 +23,7 @@ public class PayByCreditCard implements PayStrategy {
             String date = READER.readLine();
             System.out.print("Enter the CVV code: ");
             String cvv = READER.readLine();
-            card = new CreditCard(number, date, cvv);
-
-            // Validate credit card number...
+            ... //TODO instanciate credit card
 
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -38,8 +36,7 @@ public class PayByCreditCard implements PayStrategy {
     @Override
     public boolean pay(int paymentAmount) {
         if (cardIsPresent()) {
-            System.out.println("Paying " + paymentAmount + " using Credit Card.");
-            card.setAmount(card.getAmount() - paymentAmount);
+            ... //TODO: print pay statement and change credit card amount
             return true;
         } else {
             return false;

@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Concrete strategy. Implements PayPal payment method.
  */
-public class PayByPayPal implements PayStrategy {
+public class PayByPayPal implements ... { //TODO
     private static final Map<String, String> DATA_BASE = new HashMap<>();
     private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
     private String email;
@@ -53,15 +53,10 @@ public class PayByPayPal implements PayStrategy {
      */
     @Override
     public boolean pay(int paymentAmount) {
-        if (signedIn) {
-            System.out.println("Paying " + paymentAmount + " using PayPal.");
-            return true;
-        } else {
-            return false;
-        }
+        ... // TODO implement pay method, print payement and return true if signed in
     }
 
     private void setSignedIn(boolean signedIn) {
-        this.signedIn = signedIn;
+        ... //TODO implement setSignedIn
     }
 }
